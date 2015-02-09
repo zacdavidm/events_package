@@ -28,11 +28,20 @@ function events_package_node_info() {
     'event' => array(
       'name' => t('Event'),
       'base' => 'node_content',
-      'description' => t('Add an event, an entity with a distinct time and place that expires after the date has passed.'),
+      'description' => t('List an event with one or more sessions. Each session has a date/time, location, and option for a registration link.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+    'event_series' => array(
+      'name' => t('Event Series'),
+      'base' => 'node_content',
+      'description' => t('create a collection of related events'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }
