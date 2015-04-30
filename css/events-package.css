@@ -35,4 +35,18 @@ div.view-grouping-content .view-grouping:nth-child(odd){
 .view-grouping-content .view-grouping-content .view-grouping-content{
   color:#747474;
 }
+
+.field-type-datetime{
+	font-size:.8rem;
+}
+
+.field-type-datetime .date-display-start,
+.field-type-datetime .date-display-end{
+ font-size:1.3rem;
+}
+
+.field-type-datetime .date-display-single {
+  font-size: 1.3rem;
+}
+
 /* /Event Sessions, View Grouping */
