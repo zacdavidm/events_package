@@ -56,3 +56,5 @@ features_exclude[field_base][field_registration_link] = field_registration_link
 features_exclude[field_base][field_run_dates] = field_run_dates
 features_exclude[taxonomy][location] = location
 features_exclude[taxonomy][tags] = tags
+
+stylesheets[all][] = css/events-package.css

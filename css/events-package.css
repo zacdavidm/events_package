@@ -1,0 +1,38 @@
+/* Event Sessions, View Grouping */
+.view-content > .view-grouping {
+  margin-bottom: 1.5rem;
+  overflow:hidden;
+}
+
+.view-grouping .view-grouping-header {
+font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+font-weight: normal;
+font-style: normal;
+color: #222222;
+text-rendering: optimizeLegibility;
+margin-top: 0.2rem;
+margin-bottom: 0.5rem;
+line-height: 1.4;
+font-size: 1.3333rem;
+clear:left;
+border-bottom: 1px solid #808080;
+}
+
+.view-grouping .view-grouping .view-grouping-header{
+  font-size: 1.1667rem;
+  margin-bottom:0;
+  border-bottom: 0;
+}
+
+.view-events.film-showtimes .view-content > .view-grouping >.view-grouping-content > .view-grouping{
+  width: 50%;
+  float: left;
+  margin-bottom:1rem;
+}
+div.view-grouping-content .view-grouping:nth-child(odd){
+  clear:left;
+}
+.view-grouping-content .view-grouping-content .view-grouping-content{
+  color:#747474;
+}
+/* /Event Sessions, View Grouping */
