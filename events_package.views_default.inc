@@ -62,11 +62,10 @@ function events_package_views_default_views() {
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
   $handler->display->display_options['empty']['area']['content'] = 'Check back for showtimes.';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
-  /* Relationship: Content: Film Showtimes (field_film_showtimes) */
+  /* Relationship: Broken/missing handler */
   $handler->display->display_options['relationships']['field_film_showtimes_value']['id'] = 'field_film_showtimes_value';
   $handler->display->display_options['relationships']['field_film_showtimes_value']['table'] = 'field_data_field_film_showtimes';
   $handler->display->display_options['relationships']['field_film_showtimes_value']['field'] = 'field_film_showtimes_value';
-  $handler->display->display_options['relationships']['field_film_showtimes_value']['delta'] = '-1';
   /* Relationship: Content: Event Sessions (field_event_sessions) */
   $handler->display->display_options['relationships']['field_event_sessions_value']['id'] = 'field_event_sessions_value';
   $handler->display->display_options['relationships']['field_event_sessions_value']['table'] = 'field_data_field_event_sessions';
@@ -90,7 +89,7 @@ function events_package_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Field collection item: Ticket Link */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_ticket_link']['id'] = 'field_ticket_link';
   $handler->display->display_options['fields']['field_ticket_link']['table'] = 'field_data_field_ticket_link';
   $handler->display->display_options['fields']['field_ticket_link']['field'] = 'field_ticket_link';
@@ -98,9 +97,7 @@ function events_package_views_default_views() {
   $handler->display->display_options['fields']['field_ticket_link']['label'] = '';
   $handler->display->display_options['fields']['field_ticket_link']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ticket_link']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_ticket_link']['click_sort_column'] = 'url';
-  $handler->display->display_options['fields']['field_ticket_link']['type'] = 'link_absolute';
-  /* Field: Time */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_showtime_1']['id'] = 'field_showtime_1';
   $handler->display->display_options['fields']['field_showtime_1']['table'] = 'field_data_field_showtime';
   $handler->display->display_options['fields']['field_showtime_1']['field'] = 'field_showtime';
@@ -114,13 +111,6 @@ function events_package_views_default_views() {
   $handler->display->display_options['fields']['field_showtime_1']['element_type'] = '0';
   $handler->display->display_options['fields']['field_showtime_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_showtime_1']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_showtime_1']['settings'] = array(
-    'format_type' => 'time',
-    'fromto' => 'both',
-    'multiple_number' => '',
-    'multiple_from' => '',
-    'multiple_to' => '',
-  );
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
@@ -133,7 +123,7 @@ function events_package_views_default_views() {
   $handler->display->display_options['fields']['nothing']['element_type'] = '0';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing']['element_default_classes'] = FALSE;
-  /* Sort criterion: Content: Film Showtimes (field_film_showtimes) */
+  /* Sort criterion: Broken/missing handler */
   $handler->display->display_options['sorts']['field_film_showtimes_value']['id'] = 'field_film_showtimes_value';
   $handler->display->display_options['sorts']['field_film_showtimes_value']['table'] = 'field_data_field_film_showtimes';
   $handler->display->display_options['sorts']['field_film_showtimes_value']['field'] = 'field_film_showtimes_value';
@@ -157,7 +147,7 @@ function events_package_views_default_views() {
     'event' => 'event',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Field collection item: Showtime (field_showtime) */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_showtime_value']['id'] = 'field_showtime_value';
   $handler->display->display_options['filters']['field_showtime_value']['table'] = 'field_data_field_showtime';
   $handler->display->display_options['filters']['field_showtime_value']['field'] = 'field_showtime_value';
@@ -171,17 +161,14 @@ function events_package_views_default_views() {
     1 => 0,
     3 => 0,
   );
-  $handler->display->display_options['filters']['field_showtime_value']['form_type'] = 'date_popup';
-  $handler->display->display_options['filters']['field_showtime_value']['default_date'] = 'now';
 
   /* Display: Sessions By Day */
   $handler = $view->new_display('block', 'Sessions By Day', 'by_day');
   $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Relationship: Content: Film Showtimes (field_film_showtimes) */
+  /* Relationship: Broken/missing handler */
   $handler->display->display_options['relationships']['field_film_showtimes_value']['id'] = 'field_film_showtimes_value';
   $handler->display->display_options['relationships']['field_film_showtimes_value']['table'] = 'field_data_field_film_showtimes';
   $handler->display->display_options['relationships']['field_film_showtimes_value']['field'] = 'field_film_showtimes_value';
-  $handler->display->display_options['relationships']['field_film_showtimes_value']['delta'] = '-1';
   /* Relationship: Content: Taxonomy terms on node */
   $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
   $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
@@ -197,7 +184,7 @@ function events_package_views_default_views() {
   $handler->display->display_options['sorts']['field_location_tid']['field'] = 'field_location_tid';
   $handler->display->display_options['sorts']['field_location_tid']['relationship'] = 'field_film_showtimes_value';
   $handler->display->display_options['sorts']['field_location_tid']['order'] = 'DESC';
-  /* Sort criterion: Field collection item: Showtime (field_showtime) */
+  /* Sort criterion: Broken/missing handler */
   $handler->display->display_options['sorts']['field_showtime_value']['id'] = 'field_showtime_value';
   $handler->display->display_options['sorts']['field_showtime_value']['table'] = 'field_data_field_showtime';
   $handler->display->display_options['sorts']['field_showtime_value']['field'] = 'field_showtime_value';
@@ -385,11 +372,10 @@ function events_package_views_default_views() {
   $handler->display->display_options['row_options']['hide_empty'] = TRUE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Relationship: Content: Film Showtimes (field_film_showtimes) */
+  /* Relationship: Broken/missing handler */
   $handler->display->display_options['relationships']['field_film_showtimes_value']['id'] = 'field_film_showtimes_value';
   $handler->display->display_options['relationships']['field_film_showtimes_value']['table'] = 'field_data_field_film_showtimes';
   $handler->display->display_options['relationships']['field_film_showtimes_value']['field'] = 'field_film_showtimes_value';
-  $handler->display->display_options['relationships']['field_film_showtimes_value']['delta'] = '-1';
   /* Relationship: Content: Event Sessions (field_event_sessions) */
   $handler->display->display_options['relationships']['field_event_sessions_value']['id'] = 'field_event_sessions_value';
   $handler->display->display_options['relationships']['field_event_sessions_value']['table'] = 'field_data_field_event_sessions';
@@ -452,7 +438,7 @@ function events_package_views_default_views() {
   $handler->display->display_options['fields']['field_location']['label'] = '';
   $handler->display->display_options['fields']['field_location']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_location']['type'] = 'taxonomy_term_reference_plain';
-  /* Field: Field: Registration Link */
+  /* Field: Field collection item: Registration Link */
   $handler->display->display_options['fields']['field_registration_link']['id'] = 'field_registration_link';
   $handler->display->display_options['fields']['field_registration_link']['table'] = 'field_data_field_registration_link';
   $handler->display->display_options['fields']['field_registration_link']['field'] = 'field_registration_link';
